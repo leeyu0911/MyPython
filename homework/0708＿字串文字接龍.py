@@ -21,27 +21,27 @@ def word_game():
     success_number = 0
 
     print('五次失敗就會退出遊戲')
-    while error_number < 5:
+   
+    user_word1 = input('請輸入一串英文單字：')
+    while user_word1 == '':
+        print('蛤？')
         user_word1 = input('請輸入一串英文單字：')
-        while user_word1 == '':
-            print('蛤？')
-            user_word1 = input('請輸入一串英文單字：')
-        print(f'數入的字串是"{user_word1}"', end='\n\n')
+    print(f'數入的字串是"{user_word1}"', end='\n\n')
 
-        while error_number < 5:
+    while error_number < 5:
+        user_word2 = input(f'請輸入"{user_word1[-1]}"開始得字串：')
+        while user_word2 == '':
+            print('蛤？')
             user_word2 = input(f'請輸入"{user_word1[-1]}"開始得字串：')
-            while user_word2 == '':
-                print('蛤？')
-                user_word2 = input(f'請輸入"{user_word1[-1]}"開始得字串：')
-            print(f'數入的字串是"{user_word2}"', end='')
-            if check_lastword(user_word1, user_word2) == True:
-                success_number += 1
-                print(f', 成功次數{success_number}', end='\n\n')
-                user_word1, user_word2 = user_word2, user_word1
-            else:
-                error_number += 1
-                print(f'錯誤{error_number}次', end='\n\n')
-        print(f'成功次數{success_number}, 遊戲結束', end='\n\n')
+        print(f'數入的字串是"{user_word2}"', end='')
+        if check_lastword(user_word1, user_word2) == True:
+            success_number += 1
+            print(f', 成功次數{success_number}', end='\n\n')
+            user_word1 = user_word2
+        else:
+            error_number += 1
+            print(f'錯誤{error_number}次', end='\n\n')
+    print(f'成功次數{success_number}, 遊戲結束', end='\n\n')
 
 if __name__ == '__main__':
     word_game()
