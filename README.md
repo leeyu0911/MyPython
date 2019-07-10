@@ -13,7 +13,7 @@
 
     隨機輸入第一個英文字串，之後所輸入的英文字串開頭第一個字母都須符合上一個英文字串最後一個英文字母，當五次失敗後退出遊戲  
     範例：
-    python -> new ->well
+    python -> new -> well
 
 + [0710](https://github.com/leeyu0911/MyPython/blob/master/homework/0710%EF%BC%BF%E6%B8%85%E5%96%AE%E4%B8%AD%E6%89%BE%E6%B0%B4%E6%9E%9C.py)  
   清單中找水果
