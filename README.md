@@ -1,5 +1,5 @@
 # python 入門
-上課筆記、作業
+上課筆記、作業、課後練習
 
 ## Homework
 + [0703](https://github.com/leeyu0911/MyPython/blob/master/homework/0703%EF%BC%BF%E8%BC%B8%E5%85%A5%E8%BA%AB%E9%AB%98%E9%AB%94%E9%87%8D%E8%A8%88%E7%AE%97BMI.py)  
