@@ -110,3 +110,4 @@ venv.bak/
 .idea/modules.xml
 *.xml
 .idea/MyPython.iml
+.vscode/settings.json
