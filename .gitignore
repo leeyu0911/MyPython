@@ -104,3 +104,8 @@ venv.bak/
 .mypy_cache/
 .DS_Store
 .vscode/launch.json
+.idea/misc.xml
+.idea/misc.xml
+.idea/misc.xml
+.idea/modules.xml
+*.xml
