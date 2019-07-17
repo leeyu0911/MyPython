@@ -109,3 +109,4 @@ venv.bak/
 .idea/misc.xml
 .idea/modules.xml
 *.xml
+.idea/MyPython.iml
