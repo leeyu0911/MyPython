@@ -14,7 +14,7 @@ def word_game():
     當五次失敗後退出遊戲
 
     範例：
-    python -> new ->well
+    python -> new -> well
     :return:
     '''
     error_number = 0
