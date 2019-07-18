@@ -111,3 +111,7 @@ venv.bak/
 *.xml
 .idea/MyPython.iml
 .vscode/settings.json
+test/test1.py
+test/test2.py
+test/test_module/__init__.py
+test/test_module/modu1.py
