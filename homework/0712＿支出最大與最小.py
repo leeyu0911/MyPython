@@ -15,7 +15,7 @@ def dict_mether_of_sum(month=4):
 
     # 使用者輸入每個月支出金額
     for i in range(month):
-        dict_of_expend[i+1] = int(input(f'請輸入第{i+1}個月的支出金額：')) 
+        dict_of_expend[i+1] = int(input(f'請輸入第{i+1}個月的支出金額：'))
 
     # 遍歷取得字典中最大最小值以及加總
     min_expend = dict_of_expend[1]
@@ -29,11 +29,6 @@ def dict_mether_of_sum(month=4):
     print(f'支出最少的金額為:{min_expend}')
     print(f'支出總額為:{sum_expend}')
     print(f'支出金額由小到大排序為{sorted(dict_of_expend.values())}')
-
-
-
-    
-
 
 
 if __name__ == '__main__':

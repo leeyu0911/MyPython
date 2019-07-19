@@ -83,9 +83,7 @@ def dict_mether_of_sum(month=4):
 if __name__ == '__main__':
     import random
     for i in range(10):
-        test_list = []  # 創建測試清單
-        for i in range(4):
-            test_list.append(random.randint(0, 9999))
+        test_list = [random.randint(0, 9999) for i in range(4)]  # 創建測試清單
 
         # 驗證min_max_sum()函數
         a, b, c = min_max_sum(test_list)
