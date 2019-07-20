@@ -7,6 +7,7 @@ def list_mether_of_sum(month=4):
     print(f'支出總額為:{sum(list_of_expend)}')
     print(f'支出金額由小到大排序為{sorted(list_of_expend)}')
 
+
 def dict_mether_of_sum(month=4):
     dict_of_expend = dict()
     max_expend = 0
