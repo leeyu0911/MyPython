@@ -23,10 +23,17 @@
 
 
 + [0715](https://github.com/leeyu0911/MyPython/blob/master/homework/0715%EF%BC%BF%E6%94%AF%E5%87%BA%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F(%E8%87%AA%E5%AE%9A%E7%BE%A9%E5%87%BD%E6%95%B8).py)  
-支出最大最小(自定義函數)  
+    支出最大最小(自定義函數)  
 
     定義最大最小值及加總函數  
     定義排序函數
+    
++ [0717](https://github.com/leeyu0911/MyPython/blob/master/homework/0717＿回文偵測.py)  
+    回文偵測
+    
+  
+    
+    
     
 
 ***
