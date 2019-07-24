@@ -14,6 +14,8 @@ r = requests.get(url)
 dict_data = json.loads(r.text)  # dict_data = r.json()
 
 for i in dict_data:
+    if i['\ufeff工作計畫_科目名稱'] == '合計':
+        continue
     print("{\ufeff工作計畫_科目名稱}, {補助事項或用途}, {補助對象}".format(**i))
 
 
