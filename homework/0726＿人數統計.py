@@ -15,10 +15,7 @@ num_pepple = [8397, 8393, 8389, 8376, 8378, 8395, 8411, 8409, 8406,
 
 month = 1
 year = 106
-# for n in num_pepple:
-#     if month > 12:
-#         year += 1
-#         month = 1
+
 for i, j in enumerate(num_pepple):
     print(i, j)
     print(f'民國{year + i // 12}年{month + i % 12}月總人數：{j}')
