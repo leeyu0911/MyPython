@@ -1,5 +1,4 @@
 # python 入門
-上課筆記、作業、課後練習
 
 ## Homework
 + [0703](https://github.com/leeyu0911/MyPython/blob/master/homework/0703%EF%BC%BF%E8%BC%B8%E5%85%A5%E8%BA%AB%E9%AB%98%E9%AB%94%E9%87%8D%E8%A8%88%E7%AE%97BMI.py)
@@ -43,5 +42,7 @@
 + [0724](https://github.com/leeyu0911/MyPython/tree/master/homework/0724＿檔案存取)
     檔案存取
 
++ [0726](https://github.com/leeyu0911/MyPython/blob/master/homework/0726%EF%BC%BF%E4%BA%BA%E6%95%B8%E7%B5%B1%E8%A8%88.py)
+        numpy練習
 ***
 [Markdown 語法說明](http://markdown.tw/ "Title")
