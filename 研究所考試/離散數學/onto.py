@@ -15,7 +15,7 @@ def c(a, b):
     return c(a - 1, b) + c(a - 1, b - 1)
 
 
-def onto(m, n):  # 遞迴真的不好寫也不好除錯
+def onto(m, n):  #此函數是錯的 遞迴真的不好寫也不好除錯
     if n == 1:
         return 1
     else:
