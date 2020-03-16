@@ -17,4 +17,3 @@ def create_circular_linklist(n):
 
 head = create_circular_linklist(3)
 print(head.next.value)
-
