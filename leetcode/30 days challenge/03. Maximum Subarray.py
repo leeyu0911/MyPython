@@ -20,19 +20,17 @@ class Solution(object):
         if len(nums) == 1:
             return nums[0]
 
-        c = [0] * len(nums)
+        c = [0] * len(nums)  
+        # c[0] = nums[0]  # 可不用
         
-        for i in range(len(nums)):
-            try:
-                if (c[i-1] + nums[i]) > nums[i]:
-                    c[i] = c[i-1] + nums[i]
-                else:
-                    c[i] = nums[i]
-            except IndexError:
-                c[i] = nums[i]
-
+        for i in range(len(nums)): 
+            if (c[i-1] + nums[i]) > nums[i]:  # c[-1] = 0 不會有IndexError
+                c[i] = c[i-1] + nums[i]
+            else: 
+                c[i] = nums[i]  # i=0 走這條
+            
         return max(c)
 
 
 print(Solution.maxSubArray(0, [-2,1,-3,4,-1,2,1,-5,4]))
-print(Solution.maxSubArray(0, [-2,-1]))
+print(Solution.maxSubArray(0, [-1,1]))
