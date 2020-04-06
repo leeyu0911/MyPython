@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import ui
 
 input_entry_a = None
 input_entry_b = None
