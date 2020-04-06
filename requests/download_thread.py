@@ -9,7 +9,7 @@ class Download_Hanlder(Thread):
         self.filepath = filepath
 
     def run(self):
-        filename = self.url[self.url.rfind('/') + 1:]  # 檔名為從最後一個斜線到後面
+        filename = self.url[self.url.rfind('/') + 1:]  # 檔名為最後一個斜線後面
         file = r.get(self.url)
         with open(self.filepath + filename, 'wb') as f:
             f.write(file.content)
