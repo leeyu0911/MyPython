@@ -21,15 +21,16 @@ class Solution:
     
         class_strs = []
         for i in strs:
-            if sorted(list(i)) not in class_strs:
-                class_strs.append(sorted(list(i)))
+            temp = sorted(i)
+            if temp not in class_strs:
+                class_strs.append(temp)
 
         r_strs = []
         for i in class_strs:
             r_strs.append([])
 
         for i in strs:
-            r_strs[class_strs.index(sorted(list(i)))].append(i)
+            r_strs[class_strs.index(sorted(i))].append(i)
             
         return r_strs
 
