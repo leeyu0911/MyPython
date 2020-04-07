@@ -54,4 +54,4 @@ class Solution:
 
 print(Solution.countElements(0, [1,1,3,3,5,5,7,7]))
 print(Solution.countElements(0, [1,3,2,3,5,0]))
-print(Solution.countElements(0, [0,1,2,4,5,6,7])) # output為5 雖過 不確定這個答案對不對
+print(Solution.countElements(0, [0,1,2,4,5,6,7])) # output為5 
