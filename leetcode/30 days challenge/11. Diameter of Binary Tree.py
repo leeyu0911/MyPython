@@ -73,22 +73,16 @@ t1.left = t2
 print(Solution.diameterOfBinaryTree(0, t1))
 
 
-# 網友另解 想法相同只是改成回傳單一值
-class Solution:
-    def diameterOfBinaryTree(self, root: TreeNode) -> int:
-        self.max_diam = 0
-            
-        def get_maxdepth(p, depth):
-            if not p: return depth
-            
-            l_depth, r_depth = 0, 0
-            l_depth = get_maxdepth(p.left, depth+1)
-            r_depth = get_maxdepth(p.right, depth+1)
-                
-            diam_here = (l_depth-depth-1) + (r_depth-depth-1)
-            if diam_here > self.max_diam:
-                self.max_diam = diam_here
-            return max(l_depth, r_depth)
-        
-        get_maxdepth(root, 0)
-        return self.max_diam
+# Approach #1: Depth-First Search [Accepted] Analysis written by: @awice.
+class Solution(object):
+    def diameterOfBinaryTree(self, root):
+        self.ans = 1
+        def depth(node):
+            if not node: return 0
+            L = depth(node.left)
+            R = depth(node.right)
+            self.ans = max(self.ans, L+R+1)
+            return max(L, R) + 1
+
+        depth(root)
+        return self.ans - 1
