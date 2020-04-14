@@ -45,7 +45,6 @@ class Solution:
                 count -= j
             else:
                 count += j
-        print(count)
         count = count % len(s) # 右移 x 單位等於左移 len(s) - x 單位，又python mod後皆為正數，所以左移會被轉成右移
         s = s[-count:] + s[0:-count]
         return s
