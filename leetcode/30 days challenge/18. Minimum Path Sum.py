@@ -31,12 +31,12 @@ class Solution:
         for i in range(1, m):
             Q[i][0] = Q[i-1][0] + g[i][0]
 
-
         for i in range(1, m):
             for j in range(1, n):
                 Q[i][j] = min(Q[i-1][j], Q[i][j-1]) + g[i][j]
 
         return Q[-1][-1]
+
 
 l = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
 l1 = [[1,3,1],[1,5,1],[4,2,1]]
