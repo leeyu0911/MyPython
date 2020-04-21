@@ -1,4 +1,4 @@
-# not python syntax
+'''# not python syntax
 
 def DFS(G):
     for each vertex u in G.V:
@@ -21,3 +21,4 @@ def DFS_visit(G, u):
     u.color = black
     t = t+1
     u.f = t
+'''
