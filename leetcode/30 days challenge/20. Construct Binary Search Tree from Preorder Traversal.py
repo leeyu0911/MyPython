@@ -26,6 +26,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
 class Solution:
     def bstFromPreorder(self, preorder: 'List[int]') -> TreeNode:
         if not preorder:
@@ -33,7 +34,7 @@ class Solution:
 
         root = TreeNode(preorder[0])
         i = 1
-        while i < len(preorder) and root.val > preorder[i]:  
+        while i < len(preorder) and root.val > preorder[i]:
             i += 1
 
         root.left = self.bstFromPreorder(preorder[1:i])
@@ -41,8 +42,7 @@ class Solution:
         return root
 
 
-
-l = [8,5,1,7,10,12]
+l = [8, 5, 1, 7, 10, 12]
 print(Solution.bstFromPreorder(Solution(), l).val)
 
 
@@ -54,3 +54,30 @@ class Solution:
             node.left = self.bstFromPreorder(preorder[1:i])
             node.right = self.bstFromPreorder(preorder[i:])
             return node
+
+
+class Solution:
+    def bstFromPreorder(self, preorder: List[int]) -> TreeNode:
+
+        root = TreeNode(preorder[0])
+
+        for x in range(1, len(preorder)):
+            self.insert(root, preorder[x])
+
+        return root
+
+    def insert(self, root, val):
+        cur = root
+        while cur:
+            if val < cur.val:  # BST 小放左 大放右
+                if cur.left is None:
+                    cur.left = TreeNode(val)
+                    break
+                else:  # 如果子樹有東西就再下一層
+                    cur = cur.left
+            else:
+                if cur.right is None:
+                    cur.right = TreeNode(val)
+                    break
+                else:
+                    cur = cur.right
