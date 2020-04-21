@@ -84,8 +84,10 @@ class Solution(object):
             if i == len(A):
                 self.ans |= valid()
             elif A[i] == '*':
+                for c in '() ':
                     A[i] = c
                     solve(i+1)
+                    if self.ans: return
                 A[i] = '*'
             else:
                 solve(i+1)
@@ -97,5 +99,6 @@ class Solution(object):
                 if x == ')': bal -= 1
                 if bal < 0: break
             return bal == 0
+
         solve(0)
         return self.ans
