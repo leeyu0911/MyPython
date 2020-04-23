@@ -8,6 +8,8 @@ df = pd.read_excel('/Users/leeyu/OneDrive/NCU.xlsx')
 # d108 = pd.DataFrame()
 # d108[0], d108[1] = df['s'], df['y']
 
+plt.figure(figsize=(16, 8), dpi=200)
+
 x1 = pd.to_datetime(df.loc[2:6, 2], format="%m/%d", errors='ignore')#.dt.strftime("%m/%d")
 y1 = df.loc[2:6, 7]
 x2 = pd.to_datetime(df.loc[2:22, 17], format="%m/%d", errors='ignore')#.dt.strftime("%m/%d")
@@ -25,7 +27,7 @@ plt.xlabel('Date')
 plt.ylabel('ranking')
 plt.title('CS')
 plt.xticks(rotation=45)
-plt.legend()
+plt.legend(loc='upper left')
 plt.grid()
 
 for x, y in zip(x1, y1):
@@ -41,5 +43,6 @@ for x, y in zip(x3, y3):
 
 for x, y in zip(x4, y4):
     plt.text(x, y + 3, str(y), ha='center', va='bottom', fontsize=8)
+
 
 plt.show()
