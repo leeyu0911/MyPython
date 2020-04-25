@@ -23,28 +23,33 @@ from collections import defaultdict
 class Solution:
     def subarraySum(self, nums: 'List[int]', k: 'int') -> 'int':
         # Time Limit Exceeded
-        sum_dp = {}
-        n = len(nums)
+        # sum_dp = {}
+        # n = len(nums)
+        # s = 0
+        # for i in range(n):  # 建row
+        #     s = s + nums[i]
+        #     sum_dp[(0, i + 1)] = s
+        # for i in range(1, n):  # 建column
+        #     sum_dp[(i, i+1)] = nums[i]
+        # for i in range(1, n-1):
+        #     for j in range(i+2, n+1):
+        #         sum_dp[(i, j)] = sum_dp[(0, j)] - sum_dp[(0, i)]
+        # count = 0
+        # for v in sum_dp.values():
+        #     if v == k:
+        #         count += 1
+        # return count
 
-        s = 0
-        for i in range(n):  # 建row
-            s = s + nums[i]
-            sum_dp[(0, i + 1)] = s
-
-        for i in range(1, n):  # 建column
-            sum_dp[(i, i+1)] = nums[i]
-
-        for i in range(1, n-1):
-            for j in range(i+2, n+1):
-                sum_dp[(i, j)] = sum_dp[(0, j)] - sum_dp[(0, i)]
-
+        # Time Limit Exceeded
         count = 0
-        for v in sum_dp.values():
-            if v == k:
-                count += 1
-
+        n = len(nums)
+        for i in range(n):
+            s = 0
+            for j in range(i, n):
+                s += nums[j]
+                if s == k:
+                    count += 1
         return count
-
 
 
 
