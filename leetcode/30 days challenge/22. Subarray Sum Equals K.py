@@ -55,7 +55,8 @@ class Solution:
 
 l = [1, 2, 3, 4, 5]
 k = 5
-print(Solution.subarraySum(Solution, l, k))
+a = Solution()
+print(a.subarraySum(l, k))
 
 l = [1,2,1,2,1]
 k = 3
