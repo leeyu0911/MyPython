@@ -37,6 +37,7 @@ def cal(a, b, c):
 threads = []
 for i in range(3):
     threads.append(threading.Thread(target=cal, args=(a[i], b[i], c[i])))
+    threads[i].start()
 
 for i in threads:
     i.join()
