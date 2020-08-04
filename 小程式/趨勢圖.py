@@ -1,8 +1,10 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import datetime
-
-df = pd.read_excel('/Users/leeyu/OneDrive/NCU.xlsx')
+try:
+    df = pd.read_excel('/Users/leeyu/OneDrive/NCU.xlsx')
+except:
+    df = pd.read_excel(r'C:\Users\Yu\OneDrive\NCU.xlsx')
 # d109 = pd.DataFrame()
 # d109[0], d109[1] = df['d'][2:], df['i'][2:]
 # d108 = pd.DataFrame()
