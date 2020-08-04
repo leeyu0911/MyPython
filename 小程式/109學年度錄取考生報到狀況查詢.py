@@ -1,5 +1,6 @@
 # https://sites.google.com/a/chromium.org/chromedriver/home
 # /Library/Frameworks/Python.framework/Versions/3.7/bin/chromedriver
+# C:\Users\Yu\python37\Scripts
 # pip3 install selenium
 
 from selenium import webdriver
