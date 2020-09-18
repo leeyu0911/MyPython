@@ -14,8 +14,8 @@ except FileNotFoundError:
 
 plt.figure(figsize=(16, 8), dpi=200)
 
-x1 = pd.to_datetime(df.loc[2:22, 2], format="%m/%d", errors='ignore')#.dt.strftime("%m/%d")
-y1 = df.loc[2:22, 7]
+x1 = pd.to_datetime(df.loc[2:27, 2], format="%m/%d", errors='ignore')#.dt.strftime("%m/%d")
+y1 = df.loc[2:27, 7]
 x2 = pd.to_datetime(df.loc[2:22, 17], format="%m/%d", errors='ignore')#.dt.strftime("%m/%d")
 y2 = df.loc[2:22, 23]
 x3 = pd.to_datetime(df.loc[2:17, 39], format="%m/%d", errors='ignore')#.dt.strftime("%m/%d")
