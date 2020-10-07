@@ -23,7 +23,7 @@ Output: 0
 
 
 class Solution:
-    def searchInsert(self, nums: List[int], target: int) -> int:
+    def searchInsert(self, nums: list, target: int) -> int:
         for i in range(len(nums)):
             if target <= nums[i]:
                 return i
@@ -35,3 +35,6 @@ class Solution:
 Runtime: 48 ms, faster than 82.84% of Python3 online submissions for Search Insert Position.
 Memory Usage: 14.5 MB, less than 54.63% of Python3 online submissions for Search Insert Position.
 '''
+
+S = Solution()
+print(S.searchInsert([1,3,5,6], 7))
