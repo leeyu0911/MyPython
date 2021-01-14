@@ -48,9 +48,9 @@ class Solution:
 
 
 
-input = [0,0,0]
+input_list = [0,0,0]
 s = Solution()
-output = s.plusOne(input)
+output = s.plusOne(input_list)
 print(output)
 
 
