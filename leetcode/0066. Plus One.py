@@ -52,3 +52,10 @@ input = [0,0,0]
 s = Solution()
 output = s.plusOne(input)
 print(output)
+
+
+# Submission Detail
+# 114 / 114 test cases passed.
+# Status: Accepted
+# Runtime: 32 ms
+# Memory Usage: 14.2 MB
