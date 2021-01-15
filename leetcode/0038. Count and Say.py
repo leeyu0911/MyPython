@@ -72,3 +72,6 @@ print(s.countAndSay(5))
 # Runtime: 36 ms
 # Memory Usage: 14.3 MB
 
+# Runtime: 36 ms, faster than 96.02% of Python3 online submissions for Count and Say.
+# Memory Usage: 14.3 MB, less than 51.72% of Python3 online submissions for Count and Say.
+
